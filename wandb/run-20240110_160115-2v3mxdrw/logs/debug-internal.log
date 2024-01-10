@@ -1,0 +1,141 @@
+2024-01-10 16:01:15,505 INFO    StreamThr :1908024 [internal.py:wandb_internal():87] W&B internal server running at pid: 1908024, started at: 2024-01-10 16:01:15.504684
+2024-01-10 16:01:15,508 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status
+2024-01-10 16:01:15,510 INFO    WriterThread:1908024 [datastore.py:open_for_write():85] open: /home/grads/z/zhale/ECG_SimCLR/wandb/run-20240110_160115-2v3mxdrw/run-2v3mxdrw.wandb
+2024-01-10 16:01:15,511 DEBUG   SenderThread:1908024 [sender.py:send():334] send: header
+2024-01-10 16:01:15,511 DEBUG   SenderThread:1908024 [sender.py:send():334] send: run
+2024-01-10 16:01:15,801 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: check_version
+2024-01-10 16:01:15,804 INFO    SenderThread:1908024 [dir_watcher.py:__init__():216] watching files in: /home/grads/z/zhale/ECG_SimCLR/wandb/run-20240110_160115-2v3mxdrw/files
+2024-01-10 16:01:15,804 INFO    SenderThread:1908024 [sender.py:_start_run_threads():1065] run started: 2v3mxdrw with start time 1704924075.502919
+2024-01-10 16:01:15,805 DEBUG   SenderThread:1908024 [sender.py:send_request():361] send_request: summary_record
+2024-01-10 16:01:15,805 INFO    SenderThread:1908024 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2024-01-10 16:01:15,805 DEBUG   SenderThread:1908024 [sender.py:send_request():361] send_request: check_version
+2024-01-10 16:01:15,864 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: run_start
+2024-01-10 16:01:15,873 DEBUG   HandlerThread:1908024 [system_info.py:__init__():31] System info init
+2024-01-10 16:01:15,873 DEBUG   HandlerThread:1908024 [system_info.py:__init__():46] System info init done
+2024-01-10 16:01:15,873 INFO    HandlerThread:1908024 [system_monitor.py:start():151] Starting system monitor
+2024-01-10 16:01:15,874 INFO    SystemMonitor:1908024 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2024-01-10 16:01:15,874 INFO    HandlerThread:1908024 [system_monitor.py:probe():172] Collecting system info
+2024-01-10 16:01:15,875 INFO    SystemMonitor:1908024 [interfaces.py:start():168] Started cpu
+2024-01-10 16:01:15,875 INFO    SystemMonitor:1908024 [interfaces.py:start():168] Started disk
+2024-01-10 16:01:15,876 INFO    SystemMonitor:1908024 [interfaces.py:start():168] Started gpu
+2024-01-10 16:01:15,877 INFO    SystemMonitor:1908024 [interfaces.py:start():168] Started memory
+2024-01-10 16:01:15,878 INFO    SystemMonitor:1908024 [interfaces.py:start():168] Started network
+2024-01-10 16:01:16,042 DEBUG   HandlerThread:1908024 [system_info.py:probe():195] Probing system
+2024-01-10 16:01:16,054 DEBUG   HandlerThread:1908024 [git.py:repo():40] git repository is invalid
+2024-01-10 16:01:16,054 DEBUG   HandlerThread:1908024 [system_info.py:probe():241] Probing system done
+2024-01-10 16:01:16,054 DEBUG   HandlerThread:1908024 [system_monitor.py:probe():181] {'os': 'Linux-5.15.0-72-generic-x86_64-with-glibc2.31', 'python': '3.9.7', 'heartbeatAt': '2024-01-10T22:01:16.042523', 'startedAt': '2024-01-10T22:01:15.493145', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/grads/z/zhale/ECG_SimCLR/simclr1d_train.py', 'codePath': 'simclr1d_train.py', 'host': 'cse-stmi-s2.engr.tamu.edu', 'username': 'zhale', 'executable': '/home/grads/z/zhale/miniconda3/envs/tfwgpu/bin/python', 'cpu_count': 64, 'cpu_count_logical': 128, 'cpu_freq': {'current': 2.3412656250000006, 'min': 1500.0, 'max': 2900.0}, 'cpu_freq_per_core': [{'current': 3.374, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.374, 'min': 1500.0, 'max': 2900.0}, {'current': 3.374, 'min': 1500.0, 'max': 2900.0}, {'current': 3.373, 'min': 1500.0, 'max': 2900.0}, {'current': 3.373, 'min': 1500.0, 'max': 2900.0}, {'current': 3.373, 'min': 1500.0, 'max': 2900.0}, {'current': 3.372, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.373, 'min': 1500.0, 'max': 2900.0}, {'current': 3.373, 'min': 1500.0, 'max': 2900.0}, {'current': 3.373, 'min': 1500.0, 'max': 2900.0}, {'current': 3.374, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.374, 'min': 1500.0, 'max': 2900.0}, {'current': 3.374, 'min': 1500.0, 'max': 2900.0}, {'current': 3.373, 'min': 1500.0, 'max': 2900.0}, {'current': 3.372, 'min': 1500.0, 'max': 2900.0}, {'current': 2.9, 'min': 1500.0, 'max': 2900.0}, {'current': 3.372, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.373, 'min': 1500.0, 'max': 2900.0}, {'current': 3.373, 'min': 1500.0, 'max': 2900.0}, {'current': 3.373, 'min': 1500.0, 'max': 2900.0}, {'current': 3.374, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.374, 'min': 1500.0, 'max': 2900.0}, {'current': 3.374, 'min': 1500.0, 'max': 2900.0}, {'current': 3.373, 'min': 1500.0, 'max': 2900.0}, {'current': 3.373, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.373, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.361, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.36, 'min': 1500.0, 'max': 2900.0}, {'current': 3.359, 'min': 1500.0, 'max': 2900.0}, {'current': 2.9, 'min': 1500.0, 'max': 2900.0}, {'current': 3.359, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.358, 'min': 1500.0, 'max': 2900.0}, {'current': 3.364, 'min': 1500.0, 'max': 2900.0}, {'current': 3.359, 'min': 1500.0, 'max': 2900.0}, {'current': 3.359, 'min': 1500.0, 'max': 2900.0}, {'current': 3.359, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.359, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.365, 'min': 1500.0, 'max': 2900.0}, {'current': 3.365, 'min': 1500.0, 'max': 2900.0}, {'current': 3.36, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.359, 'min': 1500.0, 'max': 2900.0}, {'current': 3.359, 'min': 1500.0, 'max': 2900.0}, {'current': 3.366, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.358, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.366, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.36, 'min': 1500.0, 'max': 2900.0}, {'current': 2.603, 'min': 1500.0, 'max': 2900.0}, {'current': 2.9, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 2.9, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 2.9, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 2.9, 'min': 1500.0, 'max': 2900.0}, {'current': 2.9, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.362, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.356, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.357, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.357, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.358, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 3.358, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}, {'current': 1.5, 'min': 1500.0, 'max': 2900.0}], 'disk': {'total': 97.87200164794922, 'used': 26.432342529296875}, 'gpu': 'NVIDIA RTX A5000', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}], 'memory': {'total': 503.73140716552734}}
+2024-01-10 16:01:16,054 INFO    HandlerThread:1908024 [system_monitor.py:probe():182] Finished collecting system info
+2024-01-10 16:01:16,054 INFO    HandlerThread:1908024 [system_monitor.py:probe():185] Publishing system info
+2024-01-10 16:01:16,054 DEBUG   HandlerThread:1908024 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-01-10 16:01:16,055 DEBUG   HandlerThread:1908024 [system_info.py:_save_pip():67] Saving pip packages done
+2024-01-10 16:01:16,055 DEBUG   HandlerThread:1908024 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-01-10 16:01:16,807 INFO    Thread-13 :1908024 [dir_watcher.py:_on_file_created():275] file/dir created: /home/grads/z/zhale/ECG_SimCLR/wandb/run-20240110_160115-2v3mxdrw/files/wandb-summary.json
+2024-01-10 16:01:16,808 INFO    Thread-13 :1908024 [dir_watcher.py:_on_file_created():275] file/dir created: /home/grads/z/zhale/ECG_SimCLR/wandb/run-20240110_160115-2v3mxdrw/files/requirements.txt
+2024-01-10 16:01:16,808 INFO    Thread-13 :1908024 [dir_watcher.py:_on_file_created():275] file/dir created: /home/grads/z/zhale/ECG_SimCLR/wandb/run-20240110_160115-2v3mxdrw/files/conda-environment.yaml
+2024-01-10 16:01:20,565 DEBUG   HandlerThread:1908024 [system_info.py:_save_conda():86] Saving conda packages done
+2024-01-10 16:01:20,567 INFO    HandlerThread:1908024 [system_monitor.py:probe():187] Finished publishing system info
+2024-01-10 16:01:20,574 DEBUG   SenderThread:1908024 [sender.py:send():334] send: files
+2024-01-10 16:01:20,574 INFO    SenderThread:1908024 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2024-01-10 16:01:20,575 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:01:20,580 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-10 16:01:20,582 DEBUG   SenderThread:1908024 [sender.py:send_request():361] send_request: stop_status
+2024-01-10 16:01:20,736 DEBUG   SenderThread:1908024 [sender.py:send():334] send: telemetry
+2024-01-10 16:01:20,806 INFO    Thread-13 :1908024 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/grads/z/zhale/ECG_SimCLR/wandb/run-20240110_160115-2v3mxdrw/files/conda-environment.yaml
+2024-01-10 16:01:20,807 INFO    Thread-13 :1908024 [dir_watcher.py:_on_file_created():275] file/dir created: /home/grads/z/zhale/ECG_SimCLR/wandb/run-20240110_160115-2v3mxdrw/files/wandb-metadata.json
+2024-01-10 16:01:20,807 INFO    Thread-13 :1908024 [dir_watcher.py:_on_file_created():275] file/dir created: /home/grads/z/zhale/ECG_SimCLR/wandb/run-20240110_160115-2v3mxdrw/files/output.log
+2024-01-10 16:01:20,996 INFO    Thread-16 :1908024 [upload_job.py:push():143] Uploaded file /tmp/tmpk0_z0j38wandb/h73a4l2s-wandb-metadata.json
+2024-01-10 16:01:22,807 INFO    Thread-13 :1908024 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/grads/z/zhale/ECG_SimCLR/wandb/run-20240110_160115-2v3mxdrw/files/output.log
+2024-01-10 16:01:25,747 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:01:27,797 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: partial_history
+2024-01-10 16:01:27,798 DEBUG   SenderThread:1908024 [sender.py:send():334] send: history
+2024-01-10 16:01:27,798 DEBUG   SenderThread:1908024 [sender.py:send_request():361] send_request: summary_record
+2024-01-10 16:01:27,801 INFO    SenderThread:1908024 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2024-01-10 16:01:27,809 INFO    Thread-13 :1908024 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/grads/z/zhale/ECG_SimCLR/wandb/run-20240110_160115-2v3mxdrw/files/wandb-summary.json
+2024-01-10 16:01:28,810 INFO    Thread-13 :1908024 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/grads/z/zhale/ECG_SimCLR/wandb/run-20240110_160115-2v3mxdrw/files/output.log
+2024-01-10 16:01:29,810 INFO    Thread-13 :1908024 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/grads/z/zhale/ECG_SimCLR/wandb/run-20240110_160115-2v3mxdrw/files/output.log
+2024-01-10 16:01:30,802 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:01:35,579 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:01:35,579 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:01:35,803 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:01:40,580 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:01:40,804 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:01:45,581 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:01:45,810 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:01:46,817 INFO    Thread-13 :1908024 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/grads/z/zhale/ECG_SimCLR/wandb/run-20240110_160115-2v3mxdrw/files/config.yaml
+2024-01-10 16:01:50,583 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:01:50,935 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:01:55,584 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:01:55,936 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:02:00,585 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:02:00,937 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:02:05,586 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:02:05,938 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:02:10,587 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:02:10,939 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:02:15,588 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:02:15,878 DEBUG   SystemMonitor:1908024 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2024-01-10 16:02:15,882 DEBUG   SenderThread:1908024 [sender.py:send():334] send: stats
+2024-01-10 16:02:16,884 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:02:20,590 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:02:21,885 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:02:25,591 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:02:26,885 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:02:30,592 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:02:31,886 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:02:35,593 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:02:36,887 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:02:40,594 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:02:41,888 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:02:45,595 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:02:45,884 DEBUG   SenderThread:1908024 [sender.py:send():334] send: stats
+2024-01-10 16:02:47,886 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:02:50,596 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:02:52,888 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:02:55,598 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:02:57,889 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:03:00,601 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:03:02,890 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:03:05,603 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:03:07,891 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:03:10,605 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:03:12,893 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:03:15,606 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:03:15,887 DEBUG   SenderThread:1908024 [sender.py:send():334] send: stats
+2024-01-10 16:03:18,889 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:03:20,607 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:03:23,890 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:03:25,608 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:03:28,891 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:03:30,609 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:03:33,891 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:03:35,610 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:03:38,892 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:03:40,611 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:03:43,893 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:03:45,612 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:03:45,891 DEBUG   SenderThread:1908024 [sender.py:send():334] send: stats
+2024-01-10 16:03:49,893 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:03:50,613 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:03:54,894 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:03:55,614 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:03:59,895 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:04:00,615 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:04:04,896 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:04:05,616 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:04:09,897 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:04:10,617 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:04:14,898 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:04:15,617 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:04:15,895 DEBUG   SenderThread:1908024 [sender.py:send():334] send: stats
+2024-01-10 16:04:20,618 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:04:20,897 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:04:25,619 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:04:25,898 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:04:30,620 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:04:30,899 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:04:35,622 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:04:35,901 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:04:40,622 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:04:40,902 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: status_report
+2024-01-10 16:04:45,623 DEBUG   HandlerThread:1908024 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-10 16:04:45,903 INFO    SenderThread:1908024 [sender.py:finish():1491] shutting down send
