@@ -162,3 +162,5 @@ cython_debug/
 
 # Sicong ignores
 *.pt
+test_figs/
+saved_models/
