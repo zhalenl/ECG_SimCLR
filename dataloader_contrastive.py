@@ -7,7 +7,6 @@ from PIL import Image
 from torch.utils.data import Dataset
 from torch.nn.utils.rnn import pad_sequence
 import torch
-from transformers import AutoTokenizer
 from tqdm import tqdm
 import torchvision.transforms.functional as TF
 from multiprocessing import Pool
@@ -46,7 +45,9 @@ class ECGDataset(Dataset):
 
             self.meta_data = self.meta_data[self.meta_data["data_warning"] == 0]
             self.meta_data = self.meta_data[self.meta_data["valid_bit"] == 1]
-            self.meta_data = self.meta_data[self.meta_data["abnormality_label"] != "other"]
+            self.meta_data = self.meta_data[
+                self.meta_data["abnormality_label"] != "other"
+            ]
             # self.meta_data = self.meta_data[self.meta_data["abnormality_label"] != "sinus_rhythm"]
 
             # self.meta_data = self.meta_data[
@@ -72,7 +73,9 @@ class ECGDataset(Dataset):
             self.meta_data = self.meta_data[
                 self.meta_data["valid_bit"] == 1
             ].reset_index(drop=True)
-            self.meta_data = self.meta_data[self.meta_data["abnormality_label"] != "other"].reset_index(drop=True)
+            self.meta_data = self.meta_data[
+                self.meta_data["abnormality_label"] != "other"
+            ].reset_index(drop=True)
             # self.meta_data = self.meta_data[self.meta_data["abnormality_label"] != "sinus_rhythm"].reset_index(drop=True)
             # self.meta_data = self.meta_data[
             #     (self.meta_data["k_val"] < 12) & (self.meta_data["k_val"] > 0.5)
@@ -81,6 +84,9 @@ class ECGDataset(Dataset):
             # self.meta_data = self.meta_data.iloc[:1000].reset_index(drop=True)
             print("self.meta_data", self.meta_data)
             print("self.meta_data", self.meta_data["abnormality_label"].value_counts())
+
+            # First 80 train, last 20 test
+            # TODO: Simutanously loading both train and test data
             if split == "Train":
                 self.meta_data = self.meta_data.iloc[
                     : int(0.8 * len(self.meta_data))
@@ -134,7 +140,7 @@ class ECGDataset(Dataset):
             # for idx in range(5):
             if self.from_numpy:
                 self.ecg1[idx] = self.npy_data[idx]
-                
+
             else:
                 self.ecg1[idx] = np.load(
                     # f"{self.meta_data.iloc[idx]['segment_path']}{self.meta_data.iloc[idx]['segment_path'][-9:-1]}_ECG_II.npy"

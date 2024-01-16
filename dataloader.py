@@ -34,7 +34,8 @@ class ECGDataset(Dataset):
             # .sample(frac=1, random_state=42)
             # .reset_index(drop=True)
         )
-        self.meta_data = self.meta_data.iloc[:55000]
+        # TODO: Determining whether we need to iloc a subset
+        # self.meta_data = self.meta_data.iloc[:55000]
         print(self.meta_data)
 
         if self.from_numpy:
@@ -42,8 +43,9 @@ class ECGDataset(Dataset):
 
             self.meta_data = self.meta_data[self.meta_data["data_warning"] == 0]
             self.meta_data = self.meta_data[self.meta_data["valid_bit"] == 1]
-            self.meta_data = self.meta_data[self.meta_data["abnormality_label"] != "other"]
-
+            self.meta_data = self.meta_data[
+                self.meta_data["abnormality_label"] != "other"
+            ]
 
             # self.meta_data = self.meta_data[
             #     (self.meta_data["k_val"] < 12) & (self.meta_data["k_val"] > 0.5)
@@ -67,13 +69,17 @@ class ECGDataset(Dataset):
             self.meta_data = self.meta_data[
                 self.meta_data["valid_bit"] == 1
             ].reset_index(drop=True)
-            self.meta_data = self.meta_data[self.meta_data["abnormality_label"] != "other"].reset_index(drop=True)
+            self.meta_data = self.meta_data[
+                self.meta_data["abnormality_label"] != "other"
+            ].reset_index(drop=True)
             # self.meta_data = self.meta_data[
             #     (self.meta_data["k_val"] < 12) & (self.meta_data["k_val"] > 0.5)
             # ].reset_index(drop=True)
 
             # self.meta_data = self.meta_data.iloc[:1000].reset_index(drop=True)
 
+            # First 80 train, last 20 test
+            # TODO: Simutanously loading both train and test data
             if split == "Train":
                 self.meta_data = self.meta_data.iloc[
                     : int(0.8 * len(self.meta_data))
